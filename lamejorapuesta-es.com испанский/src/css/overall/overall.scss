@@ -1,0 +1,240 @@
+:root {
+  // Шрифты
+  --font-main: "HelveticaNeue", sans-serif; // 1 шрифт на странице
+  --font-second: "Montserrat", sans-serif; // 2 шрифт на странице
+
+  // Контейнер
+  --container-width: 1120px; // ширина контейнера
+  --container-step: 20px; // падинги по бокам на пк
+  --container-step-tablet: 15px; // падинги по бокам на планшетах
+  --container-step-mobile: 10px; // падинги по бокам на мобилках
+  --container: calc(var(--container-width) + (var(--container-step) * 2)); // сам контейнер
+
+  // Цвета
+  --background-page: #ffffff; // бекграунд страницы
+  --main: #000000;
+  --black: #000000;
+  --white: #ffffff;
+  --dark: #1d1d1d;
+  --orange: #dc440f;
+  --orange2: #dc7d0d;
+  --gray: #2a2a2a;
+
+  --hover: #b83809; // цвет при ховере
+  --active: #b83809; // цвет при активе
+}
+
+.container {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 var(--container-step);
+
+  @media (max-width: 991px) {
+    padding: 0 var(--container-step-tablet);
+  }
+
+  @media (max-width: 600px) {
+    padding: 0 var(--container-step-mobile);
+  }
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-main);
+  min-height: 100vh;
+  overflow: hidden;
+  color: var(--main);
+  background-color: var(--background-page);
+}
+
+main {
+  flex: 1 1 auto;
+
+  &:not(:last-child) {
+    margin-bottom: 80px;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.tx-17 {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 150%;
+}
+
+.tx-22 {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 140%;
+}
+
+.tt-64-40 {
+  font-family: var(--font-second);
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 129%;
+
+  @media (max-width: 1440px) {
+    font-size: 58px;
+  }
+
+  @media (max-width: 1220px) {
+    font-size: 52px;
+  }
+
+  @media (max-width: 991px) {
+    font-size: 46px;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 40px;
+  }
+}
+
+.tt-53-36 {
+  font-family: var(--font-second);
+  font-weight: 700;
+  font-size: 53px;
+  line-height: 120%;
+
+  @media (max-width: 1440px) {
+    font-size: 48px;
+  }
+
+  @media (max-width: 1220px) {
+    font-size: 44px;
+  }
+
+  @media (max-width: 991px) {
+    font-size: 42px;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 36px;
+  }
+}
+
+.tt-37-24 {
+  font-family: var(--font-second);
+  font-weight: 700;
+  font-size: 37px;
+  line-height: 130%;
+
+  @media (max-width: 1440px) {
+    font-size: 32px;
+  }
+
+  @media (max-width: 991px) {
+    font-size: 28px;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 24px;
+  }
+}
+
+.tt-31-21 {
+  font-family: var(--font-second);
+  font-weight: 700;
+  font-size: 31px;
+  line-height: 140%;
+
+  @media (max-width: 1440px) {
+    font-size: 28px;
+  }
+
+  @media (max-width: 991px) {
+    font-size: 24px;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 21px;
+  }
+}
+
+.but {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px 24px;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 400;
+  color: var(--white);
+  background-color: var(--orange);
+  width: fit-content;
+  border-radius: 5px;
+  padding: 18px 27px;
+  min-width: 115px;
+  min-height: 67px;
+  transition: background-color .3s ease-in-out;
+
+  @media (max-width: 600px) {
+    min-height: 42px;
+  }
+
+  & img {
+    display: block;
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    object-position: center;
+  }
+
+  &_orange {
+    background-color: var(--orange2);
+    min-height: 58px;
+  }
+
+  @media (any-hover: hover) {
+    &:hover {
+      background-color: var(--hover);
+    }
+  }
+
+  &:focus-visible {
+    background-color: var(--hover);
+  }
+
+  &:active {
+    background-color: var(--active);
+    transition-duration: .1s;
+  }
+}
+
+.input {
+  display: block;
+  padding: 0 24px;
+  border-radius: 5px;
+  width: 100%;
+  height: 63px;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1;
+  color: var(--white);
+  background-color: var(--gray);
+  border: 2px solid transparent;
+  transition: border-color .3s ease-in-out;
+
+  @media (any-hover: hover) {
+    &:hover {
+      border-color: var(--hover);
+    }
+  }
+
+  &:focus-visible {
+    border-color: var(--hover);
+  }
+}

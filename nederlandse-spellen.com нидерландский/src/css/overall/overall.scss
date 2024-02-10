@@ -1,0 +1,266 @@
+:root {
+  // Шрифты
+  --font-main: "RacingSansOne", sans-serif; // 1 шрифт на странице
+  --font-second: "RadioCanada", sans-serif; // 2 шрифт на странице
+
+  // Контейнер
+  --container-width: 1125px; // ширина контейнера
+  --container-step: 20px; // падинги по бокам на пк
+  --container-step-tablet: 15px; // падинги по бокам на планшетах
+  --container-step-mobile: 10px; // падинги по бокам на мобилках
+  --container: calc(var(--container-width) + (var(--container-step) * 2)); // сам контейнер
+
+  // Цвета
+  --background-page: #fff; // бекграунд страницы
+  --main: #000000;
+  --black: #000000;
+  --white: #ffffff;
+  --linear: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0) 100%);
+  --blue: rgba(181, 208, 255, 0.49);
+  --gray: #D9D9D9;
+  --blue2: #224b77;
+
+  --hover: #b5d0ff; // цвет при ховере
+  --active: #b5d0ff; // цвет при активе
+}
+
+.container {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 var(--container-step);
+
+  @media (max-width: 991px) {
+    padding: 0 var(--container-step-tablet);
+  }
+
+  @media (max-width: 600px) {
+    padding: 0 var(--container-step-mobile);
+  }
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-main);
+  min-height: 100vh;
+  overflow: hidden;
+  color: var(--main);
+  background-color: var(--background-page);
+
+  &_change {
+    & .header {
+      position: static;
+      background: transparent;
+      top: 0;
+
+      &__container {
+        min-height: 0;
+        padding-top: 24px;
+        padding-bottom: 24px;
+      }
+    }
+
+    & .burger {
+      & span {
+        background-color: var(--black);
+      }
+    }
+
+    & .nav__link {
+      color: var(--main);
+
+      @media (max-width: 991px) {
+        color: var(--white);
+      }
+
+      @media (any-hover: hover) {
+        &:hover {
+          color: var(--hover);
+        }
+      }
+
+      &:focus-visible {
+        color: var(--hover);
+      }
+
+      &:active {
+        color: var(--active);
+        transition-duration: .1s;
+      }
+    }
+  }
+}
+
+main {
+  flex: 1 1 auto;
+
+  &:not(:last-child) {
+    margin-bottom: 70px;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.tx-17 {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 150%;
+}
+
+.tx-20 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+}
+
+.tt-64-40 {
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 150%;
+
+  @media (max-width: 1440px) {
+    font-size: 58px;
+  }
+
+  @media (max-width: 1220px) {
+    font-size: 54px;
+  }
+
+  @media (max-width: 991px) {
+    font-size: 48px;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 40px;
+  }
+}
+
+.tt-64-36 {
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 150%;
+
+  @media (max-width: 1440px) {
+    font-size: 58px;
+  }
+
+  @media (max-width: 1220px) {
+    font-size: 54px;
+  }
+
+  @media (max-width: 991px) {
+    font-size: 48px;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 36px;
+  }
+}
+
+.tt-31 {
+  font-weight: 400;
+  font-size: 31px;
+  line-height: 140%;
+}
+
+.input {
+  display: block;
+  padding: 0 24px;
+  width: 100%;
+  height: 54px;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 1;
+  background-color: var(--gray);
+  border: 2px solid transparent;
+  transition: border-color .3s ease-in-out;
+
+  @media (any-hover: hover) {
+    &:hover {
+      border-color: var(--hover);
+    }
+  }
+
+  &:focus-visible {
+    border-color: var(--hover);
+  }
+
+  &::placeholder {
+    opacity: .5;
+  }
+}
+
+.but {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px 24px;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 400;
+  color: var(--black);
+  background-color: var(--gray);
+  width: fit-content;
+  min-width: 176px;
+  min-height: 49px;
+  transition: background-color .3s ease-in-out;
+
+  & img {
+    display: block;
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    object-position: center;
+  }
+
+  &_blue {
+    background-color: var(--blue);
+  }
+
+  @media (any-hover: hover) {
+    &:hover {
+      background-color: var(--hover);
+    }
+  }
+
+  &:focus-visible {
+    background-color: var(--hover);
+  }
+
+  &:active {
+    background-color: var(--active);
+    transition-duration: .1s;
+  }
+}
+
+.circle {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  &::after {
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    background-color: var(--blue2);
+  }
+
+  &:last-child {
+    &::after {
+      display: none;
+    }
+  }
+
+}

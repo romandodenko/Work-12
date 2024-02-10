@@ -1,0 +1,212 @@
+:root {
+  // Шрифты
+  --font-main: "MavenPro", sans-serif; // 1 шрифт на странице
+
+  // Контейнер
+  --container-width: 1120px; // ширина контейнера
+  --container-step: 20px; // падинги по бокам на пк
+  --container-step-tablet: 15px; // падинги по бокам на планшетах
+  --container-step-mobile: 10px; // падинги по бокам на мобилках
+  --container: calc(var(--container-width) + (var(--container-step) * 2)); // сам контейнер
+
+  // Цвета
+  --background-page: #ffffff; // бекграунд страницы 
+  --orange: #da9516;
+  --main: #000000;
+  --black: #000000;
+  --white: #ffffff;
+  --gray: #e4e2e2;
+
+  --hover: #eba82b; // цвет при ховере
+  --active: #b37605; // цвет при активе
+}
+ 
+.container {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 var(--container-step);
+
+  @media (max-width: 991px) {
+    padding: 0 var(--container-step-tablet);
+  }
+
+  @media (max-width: 600px) {
+    padding: 0 var(--container-step-mobile);
+  }
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-main);
+  min-height: 100vh;
+  overflow: hidden;
+  color: var(--main);
+  background-color: var(--background-page);
+} 
+
+main {
+  flex: 1 1 auto;
+
+  &:not(:last-child) {
+    margin-bottom: 140px;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.tt-52-34 { 
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 1.3;
+
+  @media (max-width: 991px) {
+    font-size: 42px;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 34px;
+  }
+}
+
+.tt-42-30 { 
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.3;
+
+  @media (max-width: 991px) {
+    font-size: 36px;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 30px;
+  }
+}
+
+.tx-16-14 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.3;
+
+  @media (max-width: 600px) {
+    font-size: 14px;
+  }
+}
+
+.tx-14 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+.tx-24-18 {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.3;
+
+  @media (max-width: 991px) {
+    font-size: 20px;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 18px;
+  }
+}
+
+.but {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 24px;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 400;
+  color: var(--white);
+  background-color: var(--orange);
+  width: fit-content;
+  min-height: 50px;
+  min-width: 160px;
+  transition: background-color .3s ease-in-out;
+
+  @media (any-hover: hover) {
+    &:hover {
+      background-color: var(--hover);
+    }
+  }
+
+  &:focus-visible {
+    background-color: var(--hover);
+  }
+
+  &:active {
+    background-color: var(--active);
+    transition-duration: .1s;
+  }
+}
+
+.input {
+  display: block;
+  padding: 0 24px;
+  width: 100%;
+  min-height: 50px;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 400;
+  color: var(--black);
+  background-color: var(--white);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .3);
+  transition: box-shadow .3s ease-in-out;
+
+  @media (any-hover: hover) {
+    &:hover {
+      box-shadow: 0 3px 10px var(--hover);
+    }
+  }
+
+  &:focus-visible {
+    box-shadow: 0 3px 10px var(--hover);
+  }
+
+  &::placeholder {
+    color: var(--black);
+    opacity: .6;
+  }
+}
+
+.but-cookie {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 400;
+  color: var(--white);
+  background-color: var(--orange);
+  width: fit-content;
+  transition: background-color .3s ease-in-out;
+
+  @media (any-hover: hover) {
+    &:hover {
+      background-color: var(--hover);
+    }
+  }
+
+  &:focus-visible {
+    background-color: var(--hover);
+  }
+
+  &:active {
+    background-color: var(--active);
+    transition-duration: .1s;
+  }
+}

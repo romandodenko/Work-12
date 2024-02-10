@@ -1,0 +1,232 @@
+:root {
+  // Шрифты
+  --font-main: "Rubik", sans-serif; // 1 шрифт на странице
+  --font-second: "DaysOne", sans-serif; // 2 шрифт на странице
+
+  // Контейнер
+  --container-width: 1215px; // ширина контейнера
+  --container-step: 20px; // падинги по бокам на пк
+  --container-step-tablet: 15px; // падинги по бокам на планшетах
+  --container-step-mobile: 10px; // падинги по бокам на мобилках
+  --container: calc(var(--container-width) + (var(--container-step) * 2)); // сам контейнер
+
+  // Цвета
+  --background-page: #181817; // бекграунд страницы
+  --main: #ffffff;
+  --black: #000000;
+  --white: #ffffff;
+  --l-green: #85ff80;
+  --l-green2: #95ff91;
+  --blue: #141a56;
+  --sizy: #85ffff;
+  --gray: #2c2c2c;
+
+  --hover: #65f560; // цвет при ховере
+  --active: #65f560; // цвет при активе
+}
+
+
+.container {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 var(--container-step);
+
+  @media (max-width: 991px) {
+    padding: 0 var(--container-step-tablet);
+  }
+
+  @media (max-width: 600px) {
+    padding: 0 var(--container-step-mobile);
+  }
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-main);
+  min-height: 100vh;
+  overflow: hidden;
+  color: var(--main);
+  background-color: var(--background-page);
+
+  &_change {
+    & .header {
+      background-color: transparent;
+    }
+  }
+}
+
+main {
+  flex: 1 1 auto;
+
+  &:not(:last-child) {
+    margin-bottom: 100px;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.tx-16 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.tx-17 {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 150%;
+}
+
+.tx-23 {
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 140%;
+}
+
+.tt-64-32 {
+  font-family: var(--font-second);
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 120%;
+
+  @media (max-width: 1440px) {
+    font-size: 58px;
+  }
+
+  @media (max-width: 1220px) {
+    font-size: 52px;
+  }
+
+  @media (max-width: 991px) {
+    font-size: 44px;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 32px;
+  }
+}
+
+.tt-53-30 {
+  font-family: var(--font-second);
+  font-weight: 400;
+  font-size: 53px;
+  line-height: 120%;
+
+  @media (max-width: 1440px) {
+    font-size: 48px;
+  }
+
+  @media (max-width: 1220px) {
+    font-size: 42px;
+  }
+
+  @media (max-width: 991px) {
+    font-size: 36px;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 30px;
+  }
+}
+
+.input {
+  border-radius: 5px;
+  width: 100%;
+  height: 58px;
+  padding: 0 41px;
+  display: block;
+  background-color: var(--gray);
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 1;
+  color: var(--white);
+  border: 2px solid transparent;
+  transition: border-color .3s ease-in-out;
+
+  @media (any-hover: hover) {
+    &:hover {
+      border-color: var(--hover);
+    }
+  }
+
+  &:focus-visible {
+    color: var(--hover);
+  }
+
+  &::placeholder {
+    opacity: .5;
+  }
+}
+
+.but {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 400;
+  color: var(--black);
+  background-color: var(--l-green);
+  width: fit-content;
+  border-radius: 32px;
+  padding: 10px 42px;
+  min-width: 136px;
+  min-height: 42px;
+  transition: background-color .3s ease-in-out;
+
+  @media (any-hover: hover) {
+    &:hover {
+      background-color: var(--hover);
+    }
+  }
+
+  &:focus-visible {
+    background-color: var(--hover);
+  }
+
+  &:active {
+    background-color: var(--active);
+    transition-duration: .1s;
+  }
+}
+
+.circle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  &::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    background-color: var(--l-green);
+  }
+}
+
+.tt-31-21 {
+  font-family: var(--font-second);
+  font-weight: 400;
+  font-size: 31px;
+  line-height: 140%;
+
+  @media (max-width: 991px) {
+    font-size: 26px;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 21px;
+  }
+}
