@@ -1,0 +1,182 @@
+ <!DOCTYPE html>
+ <?php
+    include 'head.php';
+    ?>
+
+ <body>
+   <div class="page page_change">
+     <!-- start header -->
+     <?php
+     include 'header.php';
+     ?>
+     <!-- end header -->
+     <main>
+       <!-- start terms -->
+       <section class="terms">
+         <div class="container">
+           <h1>kumar-sitelerinin.com'un gizlilik politikası</h1>
+
+           <p>kumar-sitelerinin.com adresinde bulunan kumar-sitelerinin.com'u kullanmak en önemli önceliklerimizden
+             biridir
+             emir
+             gizlilik
+             ziyaretçi. Bu gizlilik politikası belgesi, aşağıdaki türdeki bilgileri içerir:
+             toplandı ve kaydedildi
+             kumar-sitelerinin.com ve onu nasıl kullandığımız.</p>
+
+           <p>Daha fazla sorunuz varsa veya yönergelerimiz hakkında daha fazla bilgiye ihtiyacınız varsa
+             Gizlilik lütfen
+             bizimle iletişime geçin.</p>
+
+           <p>Bu gizlilik politikası yalnızca çevrimiçi faaliyetlerimiz için geçerlidir ve aşağıdakiler için geçerlidir:
+             ile web sitemizi ziyaret eden ziyaretçiler
+             kumar-sitelerinin.com'da paylaşılan ve/veya toplanan bilgilerle ilgili olarak.
+             Bu politika değil
+             çevrimdışı olarak veya bu web sitesi dışındaki kanallar aracılığıyla toplanan tüm veriler için geçerlidir.
+           </p>
+
+           <h2>Onay</h2>
+
+           <p>Web sitemizi kullanarak gizlilik politikamıza bağlı kalmayı kabul etmiş olursunuz.
+             şartlarıyla birlikte.</p>
+
+           <h2>Topladığımız veriler</h2>
+
+           <p>Sağlamanız gereken kişisel bilgiler ve bunları neden vermeniz gerektiğinin nedenleri
+             emin olmak için
+             Sizden kişisel verilerinizi sağlamanızı istediğimizde bunu size açıklayacağız.</p>
+           <p>Bizimle doğrudan iletişime geçerseniz, adınız gibi hakkınızda ek bilgiler alabiliriz
+             E-posta adresiniz
+             Adresiniz, telefon numaranız, bize gönderebileceğiniz mesajın içeriği ve/veya ekleri ve her şey
+             başka
+             bir diğer
+             sağlayabileceğiniz bilgiler.</p>
+           <p>Bir hesaba kaydolduğunuzda, aşağıdakiler de dahil olmak üzere iletişim bilgilerinizi isteyebiliriz:
+             isim gibi unsurlar
+             şirket adı, adresi, e-posta adresi ve telefon numarası.</p>
+
+           <h2>Verilerinizi nasıl kullanıyoruz</h2>
+
+           <p>Topladığımız bilgileri aşağıdakiler dahil çeşitli şekillerde kullanırız:</p>
+
+           <ul>
+             <li>Web sitemizin teslimatı, işletimi ve bakımı</li>
+             <li>Web sitemizi iyileştirin, özelleştirin ve genişletin</li>
+             <li>Web sitemizi nasıl kullandığınızı anlayın ve analiz edin</li>
+             <li>Yeni ürünlerin, hizmetlerin, işlevlerin ve özelliklerin geliştirilmesi</li>
+             <li>Sizinle doğrudan veya iş ortaklarımızdan biri aracılığıyla iletişim kurarız:
+               müşteri servisi
+               Size Web Sitesiyle ve pazarlamayla ilgili güncellemeleri ve diğer bilgileri sağlamak ve
+               promosyon
+               amaçlar
+               amaç</li>
+             <li>Size bir e-posta gönderiyoruz</li>
+             <li>Dolandırıcılığı tespit edin ve önleyin</li>
+           </ul>
+
+           <h2>Günlük dosyaları</h2>
+
+           <p>kumar-sitelerinin.com günlük dosyalarının kullanımında standart prosedürü izler. Bu dosyalar
+             ziyaretçileri kaydettiklerinde
+             web sitelerini ziyaret edin. Tüm barındırma şirketleri bunu yapar ve hizmet analizinin bir parçasıdır
+             ev sahipliği yapıyor. Bilgi
+             Günlük dosyalarıyla toplanan İnternet Protokolü (IP) adreslerini, tarayıcı türünü, sağlayıcıyı içerir
+             internet hizmetleri
+             (İSS), tarih ve saat, yönlendiren/çıkış sayfaları ve varsa tıklama sayısı. Onlar değil
+             bağlı
+             herhangi bir kişisel bilgi. Bilginin amacı trendleri analiz etmektir.
+             Web sitesini yönetmek, kullanıcıların web sitesindeki hareketlerini takip etmek ve bilgi toplamak
+             demografik.</p>
+           <h2>Reklam iş ortakları için gizlilik politikası</h2>
+
+           <P>Bu listede her bir ortağın gizlilik politikasını görebilirsiniz
+             sahip olduğunuz reklam
+             kumar-sitelerinin.com.</p>
+
+           <p>Üçüncü taraf reklam sunucuları veya reklam ağları, çerezler gibi teknolojiler kullanır,
+             JavaScript veya web işaretçileri
+             kumar-sitelerinin.com'a gönderilen ilgili reklam ve bağlantılarda kullanılır.
+             doğrudan
+             kullanıcının tarayıcısı. Bu olduğunda IP adresinizi otomatik olarak alırlar.
+             Bu teknolojiler kullanılıyor
+             reklam kampanyalarının etkinliğini ölçmek ve/veya içeriği özelleştirmek için
+             REKLAM
+             ziyaret ettiğiniz web sitelerinde gördüğünüz gibi.</p>
+
+           <p>kumar-sitelerinin.com'un kullandığı çerezlere erişimi veya bunlar üzerinde kontrolü olmadığını lütfen
+             unutmayın.
+             üçüncü kişiler
+             reklamverenler.</p>
+
+           <h2>Üçüncü taraflara yönelik gizlilik politikası</h2>
+
+           <p>Commmmms'in gizlilik politikası diğer reklamverenler veya web siteleri için geçerli değildir
+             ağ. Biz bunu öneriyoruz
+             bu üçüncü taraf reklam sunucularının ilgili gizlilik politikalarını incelemelisiniz
+             daha fazla bilgi için
+             Bilgi. Belirli seçeneklerden nasıl vazgeçilebileceğine ilişkin uygulamaları ve talimatları içerebilir. </p>
+
+           <p>Çerezleri bireysel tarayıcı seçenekleri aracılığıyla devre dışı bırakabilirsiniz. Daha fazla öğrenmek için
+             detayda
+             Çerezlerin belirli tarayıcılarda kullanılmasına ilişkin bilgileri tarayıcınızda bulabilirsiniz
+             veya
+             web siteleri.</p>
+
+           <h2>CCPA Gizlilik Hakları (Kişisel Bilgilerimi Satma)</h2>
+
+           <p>CCPA kapsamında Kaliforniya'daki tüketiciler, diğer hakların yanı sıra aşağıdaki haklara da sahiptir:</p>
+           <p>Tüketicilerden kişisel bilgi toplayan bir şirketin kategorileri ve
+             ÖZELLİKLE
+             Şirket tarafından tüketiciler hakkında toplanan kişisel veriler.</p>
+           <p>Şirketten topladığı tüm kişisel tüketici bilgilerini silmesini isteyin
+             şirket.</p>
+           <p>Tüketiciler hakkında kişisel bilgiler satan bir şirketten kişisel bilgilerinizi satmamasını isteyin
+             tüketici.</p>
+           <p>Bir istek gönderirseniz yanıt vermek için bir ayımız olur. Bunlardan herhangi birini gerçekleştirmek
+             istiyorsanız
+             bunlar
+             hakları, lütfen bizimle iletişime geçin.</p>
+
+           <h2>GDPR veri koruma hakları</h2>
+
+           <p>Tüm veri koruma haklarınızın tam olarak farkında olduğunuzdan emin olmak istiyoruz.
+             Her kullanıcı
+             aşağıdaki haklara sahiptir:</p>
+           <p>Erişim hakkı - kişisel verilerinizin kopyalarını talep etme hakkına sahipsiniz. Sizden ücret alabiliriz
+             küçük ücret
+             bu hizmetin ücreti.</p>
+           <p>Düzeltme hakkı - Yanlış olduğuna inandığınız herhangi bir bilgiyi düzeltmemizi talep etme hakkına
+             sahipsiniz.
+             yanlış
+             bunlar
+             yanlış. Ayrıca istediğiniz bilgileri doldurmamızı talep etme hakkına da sahipsiniz.
+             tamamlanmamış.
+           </p>
+           <p>Silme hakkı - bazı durumlarda kişisel verilerinizi silmemizi talep etme hakkına sahipsiniz
+             ilişki
+             ilişki.</p>
+           <p>İşlemenin kısıtlanması hakkı – verilerinizin işlenmesini kısıtlamamızı talep etme hakkına sahipsiniz.
+             veri
+             belirli koşullar altında kişisel veriler.</p>
+           <p>İşlemeye itiraz etme hakkı - verilerinizi işlememize itiraz etme hakkına sahipsiniz
+             senin kişisel
+             belirli koşullar altında.</p>
+           <p>Veri taşınabilirliği hakkı - tuttuğumuz verilerin aktarılmasını talep etme hakkına sahipsiniz
+             belirli koşullar altında başka bir kuruluşa veya doğrudan size toplanır.</p>
+           <p>Bir istek gönderirseniz yanıt vermek için bir ayımız olur. Bunlardan herhangi birini gerçekleştirmek
+             istiyorsanız
+             bunlar
+             hakları, lütfen bizimle iletişime geçin.</p>
+         </div>
+       </section>
+       <!-- end terms -->
+     </main>
+     <!-- start footer -->
+     <?php
+     include 'footer.php';
+     ?>
+     <!-- end footer -->
+   </div>
+ </body>
+
+ </html>

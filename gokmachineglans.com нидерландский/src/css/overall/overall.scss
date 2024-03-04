@@ -1,0 +1,146 @@
+:root {
+  // Шрифты
+  --font-main: "MPLUSRounded1c", sans-serif; // главный шрифт на странице
+
+  // Контейнер
+  --container-width: 1120px; // ширина контейнера
+  --container-step: 20px; // падинги по бокам на пк
+  --container-step-tablet: 15px; // падинги по бокам на планшетах
+  --container-step-mobile: 10px; // падинги по бокам на мобилках
+  --container: calc(var(--container-width) + (var(--container-step) * 2)); // сам контейнер
+
+  // Цвета
+  --background-page: #151515; // бекграунд страницы
+  --main: #ffffff;
+  --black: #000000;
+  --white: #ffffff;
+  --green: #212517;
+  --box-shadow: 0 -2px 22px 0 rgba(255, 255, 255, 0.25);
+  --box-shadow2: 0 4px 4px 0 rgba(255, 255, 255, 0.25);
+
+  --hover: #4a5728; // цвет при ховере
+  --active: #4a5728; // цвет при активе
+}
+
+.container {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 var(--container-step);
+
+  @media (max-width: 991px) {
+    padding: 0 var(--container-step-tablet);
+  }
+
+  @media (max-width: 600px) {
+    padding: 0 var(--container-step-mobile);
+  }
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-main);
+  min-height: 100vh;
+  overflow: hidden;
+  color: var(--main);
+  background-color: var(--background-page);
+
+  &_change {
+    & .header {
+      position: static;
+    }
+  }
+}
+
+main {
+  flex: 1 1 auto;
+
+  &:not(:last-child) {
+    margin-bottom: 70px;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.tx-17 {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 150%;
+}
+
+.tt-53-36 {
+  font-weight: 500;
+  font-size: 53px;
+  line-height: 120%;
+
+  @media (max-width: 1220px) {
+    font-size: 48px;
+  }
+
+  @media (max-width: 991px) {
+    font-size: 42px;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 36px;
+  }
+}
+
+.box-shadow {
+  box-shadow: var(--box-shadow);
+}
+
+.box-shadow2 {
+  box-shadow: var(--box-shadow2);
+}
+
+.but {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 400;
+  color: var(--main);
+  background-color: var(--green);
+  width: fit-content;
+  border-radius: 5px;
+  padding: 10px 39px;
+  min-width: 194px;
+  min-height: 42px;
+  transition: background-color .3s ease-in-out;
+
+  & img {
+    display: block;
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    object-fit: contain;
+    object-position: center;
+  }
+
+  @media (any-hover: hover) {
+    &:hover {
+      background-color: var(--hover);
+    }
+  }
+
+  &:focus-visible {
+    background-color: var(--hover);
+  }
+
+  &:active {
+    background-color: var(--active);
+    transition-duration: .1s;
+  }
+}
